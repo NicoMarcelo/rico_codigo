@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <h1>Ingrese su nombre y notas</h1>
+
+    <script src="script.js"></script>
+
+    <label for="">Nombre: </label> <br><br>
+    <input type="text" name="nombre">
+    <label for="" id="validar_nombre"></label> <br><br>
+
+    <p>Selección de asignatura:</p>
+    <select name="seleccion">
+        <option value="Ninguno">Ninguno</option>
+        <option value="Web_pro">Programación Web PRO</option>
+    </select>
+    <label for="" id="validar_seleccion"></label>
+    
+    <div class="tabla_nota">
+        <table>
+            <tr>
+                <th><h2>Unidad 1 (33%)</h2></th>
+            </tr>
+            <tr>
+                <td><label for="">Nota 1 (12%)</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="uni1_n1"></td>
+            </tr>
+            <tr>
+                <td><label for="" id="validar_u1_n1"></label></td>
+            </tr>
+            <tr>
+                <td><label for="">Nota 2 (21%)</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="uni1_n2"></td>
+            </tr>
+            <tr>
+                <td><label for="" id="validar_u1_n2"></label></td>
+            </tr>
+
+            <tr>
+                <th><h2>Unidad 2 (33%)</h2></th>
+            </tr>
+            <tr>
+                <td><label for="">Nota 1 (12%)</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="uni2_n1"></td>
+            </tr>
+            <tr>
+                <td><label for="" id="validar_u2_n1"></label></td>
+            </tr>
+            <tr>
+                <td><label for="">Nota 2 (21%)</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="uni2_n2"></td>
+            </tr>
+            <tr>
+                <td><label for="" id="validar_u2_n2"></label></td>
+            </tr>
+
+            <tr>
+                <th><h2>Unidad 3 (34%)</h2></th>
+            </tr>
+            <tr>
+                <td><label for="">Nota 1 (13%)</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="uni3_n1"></td>
+            </tr>
+            <tr>
+                <td><label for="" id="validar_u3_n1"></label></td>
+            </tr>
+            <tr>
+                <td><label for="">Nota 2 (21%)</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="uni3_n2"></td>
+            </tr>
+            <tr>
+                <td><label for="" id="validar_u3_n2"></label></td>
+            </tr>
+        </table> <br><br>
+    </div>
+    <label for="" id="validar_prom_final"></label> <br>
+    <button onclick="Calculo_notas()">Calcular</button>
+</body>
+</html>
